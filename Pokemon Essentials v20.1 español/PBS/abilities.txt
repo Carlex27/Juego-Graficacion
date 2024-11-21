@@ -1,0 +1,1072 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[STENCH]
+Name = Hedor
+Description = Puede hacer retroceder al rival tras golpearlo.
+#-------------------------------
+[DRIZZLE]
+Name = Llovizna
+Description = Hace que llueva cuando entra en combate.
+#-------------------------------
+[SPEEDBOOST]
+Name = Impulso
+Description = Aumenta la Velocidad en cada turno.
+#-------------------------------
+[BATTLEARMOR]
+Name = Arm. Batalla
+Description = Anula golpes críticos.
+#-------------------------------
+[STURDY]
+Name = Robustez
+Description = Evita el noqueo instantáneo.
+#-------------------------------
+[DAMP]
+Name = Húmedo
+Description = Prohibe el uso de movimientos explosivos.
+#-------------------------------
+[LIMBER]
+Name = Flexibilidad
+Description = Evita la parálisis.
+#-------------------------------
+[SANDVEIL]
+Name = Velo arena
+Description = Aumenta la Evasión durante las tormentas de arena.
+#-------------------------------
+[STATIC]
+Name = Elec. estát.
+Description = Puede paralizar al mínimo contacto.
+#-------------------------------
+[VOLTABSORB]
+Name = Absor. Elec.
+Description = Si le alcanza un mov. tipo Eléctrico, recupera PS.
+#-------------------------------
+[WATERABSORB]
+Name = Absor. Agua
+Description = Si le alcanza un mov. tipo Agua, recupera PS.
+#-------------------------------
+[OBLIVIOUS]
+Name = Despiste
+Description = Evita enamoramiento.
+#-------------------------------
+[CLOUDNINE]
+Name = Aclimatación
+Description = Anula todos los efectos del tiempo atmosférico.
+#-------------------------------
+[COMPOUNDEYES]
+Name = Ojo compuesto
+Description = Aumenta la precisión de sus movimientos.
+#-------------------------------
+[INSOMNIA]
+Name = Insomnio
+Description = Su resistencia al sueño le impide quedarse dormido.
+#-------------------------------
+[COLORCHANGE]
+Name = Cambio color
+Description = Adopta el tipo del último mov. que lo golpeó.
+#-------------------------------
+[IMMUNITY]
+Name = Immunidad
+Description = Evita el envenenamiento.
+#-------------------------------
+[FLASHFIRE]
+Name = Absor. Fuego
+Description = Anula movimientos tipo Fuego.
+#-------------------------------
+[SHIELDDUST]
+Name = Polvo escudo
+Description = Anula efectos secundarios de estado en mov. del rival.
+#-------------------------------
+[OWNTEMPO]
+Name = Ritmo propio
+Description = Evita la confusión.
+#-------------------------------
+[SUCTIONCUPS]
+Name = Ventosas
+Description = Anula mov. y objetos que fuerzan el relevo.
+#-------------------------------
+[INTIMIDATE]
+Name = Intimidación
+Description = Reduce el ataque del oponente en 1 nivel.
+#-------------------------------
+[SHADOWTAG]
+Name = Sombra trampa
+Description = Evita que el oponente escape.
+#-------------------------------
+[ROUGHSKIN]
+Name = Piel tosca
+Description = Daña al pokémon que lo toque.
+#-------------------------------
+[WONDERGUARD]
+Name = Superguarda
+Description = Solo lo dañan movimientos superefectivos.
+#-------------------------------
+[LEVITATE]
+Name = Levitación
+Description = Es invulnerable a los mov. tipo Tierra.
+#-------------------------------
+[EFFECTSPORE]
+Name = Efecto espora
+Description = Puede envenenar, paralizar o dormir al contacto.
+#-------------------------------
+[SYNCHRONIZE]
+Name = Sincronía
+Description = Transfiere el estado al Pokémon rival.
+#-------------------------------
+[CLEARBODY]
+Name = Cuerpo puro
+Description = Otros Pokémon no pueden reducir sus estadísticas.
+#-------------------------------
+[NATURALCURE]
+Name = Cura natural
+Description = Cura los problemas de estado si es retirado.
+#-------------------------------
+[LIGHTNINGROD]
+Name = Pararrayos
+Description = Absorbe mov. eléctricos y sube el At. Esp.
+#-------------------------------
+[SERENEGRACE]
+Name = Dicha
+Description = Potencia los efectos sec. de los movimientos.
+#-------------------------------
+[SWIFTSWIM]
+Name = Nado rápido
+Description = Duplica la velocidad del Pokémon bajo la lluvia.
+#-------------------------------
+[CHLOROPHYLL]
+Name = Clorofila
+Description = Duplica la velocidad del Pokémon bajo el sol.
+#-------------------------------
+[ILLUMINATE]
+Name = Iluminación
+Description = Encuentro con Pkm salvajes más a menudo.
+#-------------------------------
+[TRACE]
+Name = Rastro
+Description = El usuario copia la habilidad del rival.
+#-------------------------------
+[HUGEPOWER]
+Name = Potencia
+Description = Aumenta la estadística de Ataque.
+#-------------------------------
+[POISONPOINT]
+Name = Punto tóxico
+Description = Puede envenenar al mínimo contacto.
+#-------------------------------
+[INNERFOCUS]
+Name = Foco interno
+Description = El Pokémon no puede retroceder.
+#-------------------------------
+[MAGMAARMOR]
+Name = Escudo magma
+Flags = FasterEggHatching
+Description = Evita la congelación.
+#-------------------------------
+[WATERVEIL]
+Name = Velo agua
+Description = Evita las quemaduras.
+#-------------------------------
+[MAGNETPULL]
+Name = Imán
+Description = Los Pokémon acero no pueden escapar.
+#-------------------------------
+[SOUNDPROOF]
+Name = Insonorizar
+Description = Inmunidad a mov. de sonido.
+#-------------------------------
+[RAINDISH]
+Name = Cura lluvia
+Description = Recupera PS si llueve.
+#-------------------------------
+[SANDSTREAM]
+Name = Chorro arena
+Description = Invoca una tormenta de arena.
+#-------------------------------
+[PRESSURE]
+Name = Presión
+Description = El Pokémon rival dispone de menos PP.
+#-------------------------------
+[THICKFAT]
+Name = Sebo
+Description = Resiste mejor mov. de Hielo y Fuego.
+#-------------------------------
+[EARLYBIRD]
+Name = Madrugar
+Description = Despierta antes de lo habitual.
+#-------------------------------
+[FLAMEBODY]
+Name = Cuerpo llama
+Flags = FasterEggHatching
+Description = Puede quemar al mínimo contacto.
+#-------------------------------
+[RUNAWAY]
+Name = Fuga
+Description = Escapa fácilmente de los Pokémon salvajes.
+#-------------------------------
+[KEENEYE]
+Name = Vista lince
+Description = Su precisión no puede disminuir.
+#-------------------------------
+[HYPERCUTTER]
+Name = Corte fuerte
+Description = Su ataque no puede disminuir.
+#-------------------------------
+[PICKUP]
+Name = Recogida
+Description = El Pokémon puede recoger objetos.
+#-------------------------------
+[TRUANT]
+Name = Ausente
+Description = Holgazanea turno por medio.
+#-------------------------------
+[HUSTLE]
+Name = Entusiasmo
+Description = Mejora el Ataque, pero disminuye la Precisión.
+#-------------------------------
+[CUTECHARM]
+Name = Gran encanto
+Description = Puede enamorar al mínimo contacto.
+#-------------------------------
+[PLUS]
+Name = Más
+Description = Sube el At. Esp. si otro Pkm tiene Más o Menos.
+#-------------------------------
+[MINUS]
+Name = Menos
+Description = Sube el At. Esp. si otro Pkm tiene Más o Menos.
+#-------------------------------
+[FORECAST]
+Name = Predicción
+Description = Transforma a Castform según el clima.
+#-------------------------------
+[STICKYHOLD]
+Name = Viscosidad
+Description = No pueden quitarle el objeto.
+#-------------------------------
+[SHEDSKIN]
+Name = Mudar
+Description = Puede curar sus problemas de estado.
+#-------------------------------
+[GUTS]
+Name = Agallas
+Description = Aumenta el Ataque si sufre un problema de estado.
+#-------------------------------
+[MARVELSCALE]
+Name = Escama especial
+Description = Aumenta la Defensa si sufre un problema de estado.
+#-------------------------------
+[LIQUIDOOZE]
+Name = Lodo líquido
+Description = Daña a quien intente drenar su salud.
+#-------------------------------
+[OVERGROW]
+Name = Espesura
+Description = Mejora mov. Planta en apuros.
+#-------------------------------
+[BLAZE]
+Name = Mar llamas
+Description = Mejora mov. Fuego en apuros.
+#-------------------------------
+[TORRENT]
+Name = Torrente
+Description = Mejora mov. Agua en apuros.
+#-------------------------------
+[SWARM]
+Name = Enjambre
+Description = Mejora mov. Bicho en apuros.
+#-------------------------------
+[ROCKHEAD]
+Name = Cabeza roca
+Description = No sufre de daño de retroceso.
+#-------------------------------
+[DROUGHT]
+Name = Sequía
+Description = Induce clima soleado.
+#-------------------------------
+[ARENATRAP]
+Name = Trampa arena
+Description = El oponente no puede escapar.
+#-------------------------------
+[VITALSPIRIT]
+Name = Espíritu vital
+Description = El Pokémon no puede dormirse.
+#-------------------------------
+[WHITESMOKE]
+Name = Humo blanco
+Description = Sus estadísticas no pueden disminuir.
+#-------------------------------
+[PUREPOWER]
+Name = Energía pura
+Description = Aumenta el ataque del Pokémon.
+#-------------------------------
+[SHELLARMOR]
+Name = Caparazón
+Description = Previene golpes críticos.
+#-------------------------------
+[AIRLOCK]
+Name = Bucle aire
+Description = Anula efectos del clima.
+#-------------------------------
+[TANGLEDFEET]
+Name = Tumbos
+Description = Aumenta la evasión si el Pkm está confundido.
+#-------------------------------
+[MOTORDRIVE]
+Name = Electromotor
+Description = Aumenta la Velocidad si lo golpe un mov. Eléc.
+#-------------------------------
+[RIVALRY]
+Name = Rivalidad
+Description = Daña más si el Pokémon rival es del mismo sexo.
+#-------------------------------
+[STEADFAST]
+Name = Impasible
+Description = Aumenta la Velocidad si el Pokémon retrocede.
+#-------------------------------
+[SNOWCLOAK]
+Name = Manto níveo
+Description = Aumenta la evasión si graniza.
+#-------------------------------
+[GLUTTONY]
+Name = Gula
+Description = Consume las bayas antes de tiempo.
+#-------------------------------
+[ANGERPOINT]
+Name = Irascible
+Description = Si recibe un crítico, maximiza su Ataque.
+#-------------------------------
+[UNBURDEN]
+Name = Liviano
+Description = Duplica su velocidad si pierde o usa su objeto.
+#-------------------------------
+[HEATPROOF]
+Name = Ignífugo
+Description = Debilita movimientos tipo Fuego.
+#-------------------------------
+[SIMPLE]
+Name = Simple
+Description = Duplica los cambios de estadística.
+#-------------------------------
+[DRYSKIN]
+Name = Piel seca
+Description = Pierde PS si hay sol, recupera si hay lluvia.
+#-------------------------------
+[DOWNLOAD]
+Name = Descarga
+Description = Ajusta el ataque según la defensa del rival.
+#-------------------------------
+[IRONFIST]
+Name = Puño férreo
+Description = Aumenta la potencia de los puñetazos.
+#-------------------------------
+[POISONHEAL]
+Name = Antídoto
+Description = Recupera Ps si está envenenado.
+#-------------------------------
+[ADAPTABILITY]
+Name = Adaptable
+Description = Aumenta la potencia de mov. del mismo tipo.
+#-------------------------------
+[SKILLLINK]
+Name = Encadenado
+Description = Los movimientos pegan todas las veces.
+#-------------------------------
+[HYDRATION]
+Name = Hidratación
+Description = Si llueve, cura sus problemas de estado.
+#-------------------------------
+[SOLARPOWER]
+Name = Poder solar
+Description = Pierde PS, pero sube su At. Esp. si hay sol.
+#-------------------------------
+[QUICKFEET]
+Name = Pies rápidos
+Description = Sube la Velocidad si sufre un prob. de estado.
+#-------------------------------
+[NORMALIZE]
+Name = Normalidad
+Description = Todos los movimientos son tipo Normal.
+#-------------------------------
+[SNIPER]
+Name = Francotirador
+Description = Potencia los golpes críticos.
+#-------------------------------
+[MAGICGUARD]
+Name = Guardia mágica
+Description = Solo los ataques lo dañan.
+#-------------------------------
+[NOGUARD]
+Name = Indefenso
+Description = Sus ataques y los del rival son inaludibles.
+#-------------------------------
+[STALL]
+Name = Rezagado
+Description = El Pokémon se mueve último.
+#-------------------------------
+[TECHNICIAN]
+Name = Experto
+Description = Aumenta la potencia de los movimientos.
+#-------------------------------
+[LEAFGUARD]
+Name = Defensa hoja
+Description = Si hay sol, evita problemas de estado.
+#-------------------------------
+[KLUTZ]
+Name = Zoquete
+Description = El Pokémon no puede usar ningún objeto.
+#-------------------------------
+[MOLDBREAKER]
+Name = Rompemoldes
+Description = Ignora las habilidades.
+#-------------------------------
+[SUPERLUCK]
+Name = Afortunado
+Description = Los golpes críticos son más frecuentes.
+#-------------------------------
+[AFTERMATH]
+Name = Resquisio
+Description = Daña a quien lo debilitó.
+#-------------------------------
+[ANTICIPATION]
+Name = Anticipación
+Description = Se percata del movimiento más potente del rival.
+#-------------------------------
+[FOREWARN]
+Name = Alerta
+Description = Determina los movimientos del rival.
+#-------------------------------
+[UNAWARE]
+Name = Ignorante
+Description = Ignora cambios en las estadísticas.
+#-------------------------------
+[TINTEDLENS]
+Name = Cromolente
+Description = Potencia mov. poco efectivos.
+#-------------------------------
+[FILTER]
+Name = Filtro
+Description = Reduce el daño de mov. superefectivos.
+#-------------------------------
+[SLOWSTART]
+Name = Inicio lento
+Description = Reduce el ataque y la velocidad por un rato.
+#-------------------------------
+[SCRAPPY]
+Name = Intrépido
+Description = Puede golpear a Pokémon tipo Fantasma.
+#-------------------------------
+[STORMDRAIN]
+Name = Colector
+Description = Sube el At. Esp. si alguien usa un ataque tipo Agua.
+#-------------------------------
+[ICEBODY]
+Name = Gélido
+Description = Recupera PS si graniza.
+#-------------------------------
+[SOLIDROCK]
+Name = Roca sólida
+Description = Los golpes superefectivos hacen menos daño.
+#-------------------------------
+[SNOWWARNING]
+Name = Nevada
+Description = Invoca el granizo.
+#-------------------------------
+[HONEYGATHER]
+Name = Recogemiel
+Description = Recoge miel poco a poco.
+#-------------------------------
+[FRISK]
+Name = Cacheo
+Description = Revisa el objeto del Pokémon rival.
+#-------------------------------
+[RECKLESS]
+Name = Audaz
+Description = Mejora movimientos con daño de retroceso.
+#-------------------------------
+[MULTITYPE]
+Name = Multitipo
+Description = Cambia el tipo según la Tabla que sostenga.
+#-------------------------------
+[FLOWERGIFT]
+Name = Don floral
+Description = Aumenta At. Esp. y Def. Esp. si está soleado.
+#-------------------------------
+[BADDREAMS]
+Name = Mal sueño
+Description = El rival pierde PS si está dormido.
+#-------------------------------
+[PICKPOCKET]
+Name = Hurto
+Description = Roba el objeto del Pokémon rival.
+#-------------------------------
+[SHEERFORCE]
+Name = Fuerza bruta
+Description = Potencia movimientos a costa de sus efectos secundarios.
+#-------------------------------
+[CONTRARY]
+Name = Respondón
+Description = Invierte los cambios de estadísticas.
+#-------------------------------
+[UNNERVE]
+Name = Nerviosismo
+Description = El rival no puede consumir bayas.
+#-------------------------------
+[DEFIANT]
+Name = Competitivo
+Description = Sube el Ataque si baja otra estadística.
+#-------------------------------
+[DEFEATIST]
+Name = Flaqueza
+Description = Reduce la ofensiva si está a mitad de vida.
+#-------------------------------
+[CURSEDBODY]
+Name = Cuerpo maldito
+Description = Puede desactivar un movimiento del rival.
+#-------------------------------
+[HEALER]
+Name = Alma cura
+Description = Puede curar el problema de estado de un aliado.
+#-------------------------------
+[FRIENDGUARD]
+Name = Compiescolta
+Description = Reduce el daño que reciben los aliados.
+#-------------------------------
+[WEAKARMOR]
+Name = Arm. frágil
+Description = Golpes físicos bajan la Defensa y suben la Veloc.
+#-------------------------------
+[HEAVYMETAL]
+Name = Metal pesado
+Description = Duplica el peso del Pokémon.
+#-------------------------------
+[LIGHTMETAL]
+Name = Metal liviano
+Description = El Pokémon pesa la mitad.
+#-------------------------------
+[MULTISCALE]
+Name = Compensación
+Description = Si tiene todos los PS, reduce el daño recibido.
+#-------------------------------
+[TOXICBOOST]
+Name = Ímpetu tóxico
+Description = Aumenta el ataque si está envenenado.
+#-------------------------------
+[FLAREBOOST]
+Name = Ímpetu ardiente
+Description = Aumenta el ataque si está quemado.
+#-------------------------------
+[HARVEST]
+Name = Cosecha
+Description = Crea otra baya tras consumir una.
+#-------------------------------
+[TELEPATHY]
+Name = Telepatía
+Description = Esquiva ataques de aliados.
+#-------------------------------
+[MOODY]
+Name = Veleta
+Description = Aumenta y disminuye estadísticas al azar.
+#-------------------------------
+[OVERCOAT]
+Name = Funda
+Description = Protege al Pokémon del daño climático.
+#-------------------------------
+[POISONTOUCH]
+Name = Toque tóxico
+Description = Puede envenenar tras atacar.
+#-------------------------------
+[REGENERATOR]
+Name = Regeneración
+Description = Restaura PS al ser retirado de la batalla.
+#-------------------------------
+[BIGPECKS]
+Name = Sacapecho
+Description = La Defensa no puede ser disminuida.
+#-------------------------------
+[SANDRUSH]
+Name = Ímpetu arena
+Description = Sube la velocidad en tormentas de arena.
+#-------------------------------
+[WONDERSKIN]
+Name = Piel milagro
+Description = Reduce la precisión de movimientos de estado.
+#-------------------------------
+[ANALYTIC]
+Name = Cálculo final
+Description = Aumenta la potencia del ataque si ataca último.
+#-------------------------------
+[ILLUSION]
+Name = Ilusión
+Description = Toma la forma del último Pokémon del equipo.
+#-------------------------------
+[IMPOSTER]
+Name = Impostor
+Description = Se transforma en el Pokémon rival.
+#-------------------------------
+[INFILTRATOR]
+Name = Allanamiento
+Description = Ignora cualquier tipo de barrera.
+#-------------------------------
+[MUMMY]
+Name = Momia
+Description = Transmite esta habilidad al mínimo contacto.
+#-------------------------------
+[MOXIE]
+Name = Autoestima
+Description = Aumenta el Ataque tras derrotar un Pokémon.
+#-------------------------------
+[JUSTIFIED]
+Name = Justiciero
+Description = Sube el Ataque si lo golpea un mov. Siniestro.
+#-------------------------------
+[RATTLED]
+Name = Cobardía
+Description = Aumenta la velocidad si lo golpean ciertos movimientos.
+#-------------------------------
+[MAGICBOUNCE]
+Name = Espejo mágico
+Description = Refleja movimientos de estado.
+#-------------------------------
+[SAPSIPPER]
+Name = Herbívoro
+Description = Sube el Ataque si lo golpea un movimiento Planta.
+#-------------------------------
+[PRANKSTER]
+Name = Bromista
+Description = Los mov. de estado tienen prioridad.
+#-------------------------------
+[SANDFORCE]
+Name = Poder arena
+Description = Potencia algunos mov. si hay tormenta de arena.
+#-------------------------------
+[IRONBARBS]
+Name = Punta acero
+Description = Daña a quien lo golpee con un mov. físico.
+#-------------------------------
+[ZENMODE]
+Name = Modo daruma
+Description = Cambia de forma si sus PS son bajos.
+#-------------------------------
+[VICTORYSTAR]
+Name = Tinovictoria
+Description = Aumenta la precisión del equipo.
+#-------------------------------
+[TURBOBLAZE]
+Name = Turbollama
+Description = Ignora las habilidades.
+#-------------------------------
+[TERAVOLT]
+Name = Terravoltaje
+Description = Ignora las habilidades.
+#-------------------------------
+[AROMAVEIL]
+Name = Velo aroma
+Description = Protege al equipo de algunos mov. de estado.
+#-------------------------------
+[FLOWERVEIL]
+Name = Velo flor
+Description = Protege a los Pkm Planta aliados de cambios de estado/estadísticas.
+#-------------------------------
+[CHEEKPOUCH]
+Name = Carrillo
+Description = Recupera PS si come una baya.
+#-------------------------------
+[PROTEAN]
+Name = Mutatipo
+Description = Cambia de tipo según el movimiento a usar.
+#-------------------------------
+[FURCOAT]
+Name = Pelaje recio
+Description = Los ataques físicos hacen la mitad de daño.
+#-------------------------------
+[MAGICIAN]
+Name = Prestidigitador
+Description = Roba el objeto de su víctima.
+#-------------------------------
+[BULLETPROOF]
+Name = Antibalas
+Description = Protege al Pokémon de proyectiles.
+#-------------------------------
+[COMPETITIVE]
+Name = Tenacidad
+Description = Sube mucho el At. Esp. si otra estad. es reducida.
+#-------------------------------
+[STRONGJAW]
+Name = Mandíb. fuerte
+Description = Potencia movimientos de mordisco.
+#-------------------------------
+[REFRIGERATE]
+Name = Piel helada
+Description = Los mov. tipo Normal pasan a ser tipo Hielo.
+#-------------------------------
+[SWEETVEIL]
+Name = Velo dulce
+Description = Impide que algún Pokémon del equipo se duerma.
+#-------------------------------
+[STANCECHANGE]
+Name = Cambio táctico
+Description = Alterna entre forma Escudo y forma Filo.
+#-------------------------------
+[GALEWINGS]
+Name = Alas vendaval
+Description = Si el PS está al máximo, los mov. Volador tienen prioridad.
+#-------------------------------
+[MEGALAUNCHER]
+Name = Megadisparador
+Description = Potencia movimientos de pulso y disparo.
+#-------------------------------
+[GRASSPELT]
+Name = Manto frondoso
+Description = Sube la defensa en si hay un campo de hierba.
+#-------------------------------
+[SYMBIOSIS]
+Name = Simbiosis
+Description = Pasa su objeto si su aliado lo perdió.
+#-------------------------------
+[TOUGHCLAWS]
+Name = Garra dura
+Description = Potencia movimientos de contacto.
+#-------------------------------
+[PIXILATE]
+Name = Piel feérica
+Description = Transforma y potencia mov. Normal en tipo Hada.
+#-------------------------------
+[GOOEY]
+Name = Baba
+Description = Baja la velocidad al mínimo contacto.
+#-------------------------------
+[AERILATE]
+Name = Piel celeste
+Description = Transforma y potencia mov. Normal en tipo Volador.
+#-------------------------------
+[PARENTALBOND]
+Name = Amor filial
+Description = Golpea dos veces al rival.
+#-------------------------------
+[DARKAURA]
+Name = Aura oscura
+Description = Potencia movimientos tipo Siniestro.
+#-------------------------------
+[FAIRYAURA]
+Name = Aura feérica
+Description = Potencia movimientos tipo Hada.
+#-------------------------------
+[AURABREAK]
+Name = Rompeaura
+Description = Revierte efectos de auras.
+#-------------------------------
+[PRIMORDIALSEA]
+Name = Mar del albor
+Description = Induce lluvia y anula movimientos tipo Fuego.
+#-------------------------------
+[DESOLATELAND]
+Name = Tierra del ocaso
+Description = Induce sol y anula movimientos tipo Agua.
+#-------------------------------
+[DELTASTREAM]
+Name = Ráfaga delta
+Description = Anula debilidades del tipo Volador.
+#-------------------------------
+[STAMINA]
+Name = Firmeza
+Description = Sube la Defensa al mínimo contacto.
+#-------------------------------
+[WIMPOUT]
+Name = Huida
+Description = Se retira del campo de batalla si tiene pocos PS.
+#-------------------------------
+[EMERGENCYEXIT]
+Name = Retirada
+Description = Cambia de Pokémon si tiene pocos PS.
+#-------------------------------
+[WATERCOMPACTION]
+Name = Hidrorrefuerzo
+Description = Aumenta mucho la Def. si lo golpea un mov. Agua.
+#-------------------------------
+[MERCILESS]
+Name = Ensañamiento
+Description = Si está envenenado, sus ataques son críticos.
+#-------------------------------
+[SHIELDSDOWN]
+Name = Escudo limitado
+Description = Su escudo se rompe cuando sus PS son bajos.
+#-------------------------------
+[STAKEOUT]
+Name = Vigilante
+Description = Golpea más fuerte a Pokémon que recién entran al combate.
+#-------------------------------
+[WATERBUBBLE]
+Name = Pompa
+Description = Debilita ataques tipo Fuego y previene quemaduras.
+#-------------------------------
+[STEELWORKER]
+Name = A. templado
+Description = Potencia movimientos tipo Acero.
+#-------------------------------
+[BERSERK]
+Name = Cólera
+Description = Sube el At. Esp. si un ataque lo deja a poca vida.
+#-------------------------------
+[SLUSHRUSH]
+Name = Quitanieves
+Description = Duplica la velocidad si graniza.
+#-------------------------------
+[LONGREACH]
+Name = Remoto
+Description = Los ataques físicos no tienen contacto.
+#-------------------------------
+[LIQUIDVOICE]
+Name = Voz fluida
+Description = Convierte mov. de sonido en tipo Agua.
+#-------------------------------
+[TRIAGE]
+Name = Primer auxilio
+Description = Prioriza movimientos de curación.
+#-------------------------------
+[GALVANIZE]
+Name = Piel eléctrica
+Description = Transforma y potencia mov. Normal en tipo Eléc.
+#-------------------------------
+[SURGESURFER]
+Name = Cola Surf
+Description = Duplica la velocidad en campo eléctrico.
+#-------------------------------
+[SCHOOLING]
+Name = Banco
+Description = Cambia de forma si tiene muchos PS.
+#-------------------------------
+[DISGUISE]
+Name = Disfraz
+Description = Protege de un ataque una sola vez.
+#-------------------------------
+[BATTLEBOND]
+Name = Fuerte afecto
+Description = Cambia de forma al derrotar a un Pokémon.
+#-------------------------------
+[POWERCONSTRUCT]
+Name = Agrupamiento
+Description = Cambia de forma si tiene pocos PS.
+#-------------------------------
+[CORROSION]
+Name = Corrosión
+Description = Puede envenenar a Pokémon tipo Acero y Veneno.
+#-------------------------------
+[COMATOSE]
+Name = Letargo perenne
+Description = Siempre está dormido, pero puede atacar.
+#-------------------------------
+[QUEENLYMAJESTY]
+Name = Regia presencia
+Description = Anula movimientos de prioridad del rival.
+#-------------------------------
+[INNARDSOUT]
+Name = Revés
+Description = Daña a quien lo debilitó.
+#-------------------------------
+[DANCER]
+Name = Pareja de baile
+Description = Repite movimientos de baile al instante.
+#-------------------------------
+[BATTERY]
+Name = Batería
+Description = Potencia mov. especiales del aliado.
+#-------------------------------
+[FLUFFY]
+Name = Peluche
+Description = Sube la defensa pero ataques tipo Fuego lo dañan más.
+#-------------------------------
+[DAZZLING]
+Name = Cuerpo vívido
+Description = Anula movimientos de prioridad del rival.
+#-------------------------------
+[SOULHEART]
+Name = Coránima
+Description = Aumenta el Ataque Especial si debilita a un Pokémon.
+#-------------------------------
+[TANGLINGHAIR]
+Name = Rizos rebeldes
+Description = Baja la velocidad al mínimo contacto.
+#-------------------------------
+[RECEIVER]
+Name = Receptor
+Description = Copia la habilidad del aliado debilitado.
+#-------------------------------
+[POWEROFALCHEMY]
+Name = Reacción química
+Description = Copia la habilidad del aliado debilitado.
+#-------------------------------
+[BEASTBOOST]
+Name = Ultraimpulso
+Description = Aumenta la mejor estad. si debilita a un Pokémon.
+#-------------------------------
+[RKSSYSTEM]
+Name = Sistema alfa
+Description = Cambia su tipo según el Disco que sostenga.
+#-------------------------------
+[ELECTRICSURGE]
+Name = Electrogénesis
+Description = Induce al terreno eléctrico.
+#-------------------------------
+[PSYCHICSURGE]
+Name = Psicogénesis
+Description = Induce al terreno psíquico.
+#-------------------------------
+[MISTYSURGE]
+Name = Nebulogénesis
+Description = Induce al terreno hada.
+#-------------------------------
+[GRASSYSURGE]
+Name = Herbogénesis
+Description = Induce al terreno planta.
+#-------------------------------
+[FULLMETALBODY]
+Name = Guar. metálica
+Description = Otros Pokémon no pueden reducir sus estadísticas.
+#-------------------------------
+[SHADOWSHIELD]
+Name = Guar. espectro
+Description = Si tiene todos los PS, reduce el daño recibido.
+#-------------------------------
+[PRISMARMOR]
+Name = Armad. prisma
+Description = Reduce el daño de mov. superefectivos.
+#-------------------------------
+[NEUROFORCE]
+Name = Fuerza cerebral
+Description = Potencia movimientos superfectivos.
+#-------------------------------
+[INTREPIDSWORD]
+Name = Esp. indómita
+Description = Sube el Ataque al entrar al campo de batalla.
+#-------------------------------
+[DAUNTLESSSHIELD]
+Name = Escudo recio
+Description = Sube la Defensa al entrar al campo de batalla.
+#-------------------------------
+[LIBERO]
+Name = Líbero
+Description = Cambia de tipo según el movimiento a usar.
+#-------------------------------
+[BALLFETCH]
+Name = Recogebolas
+Description = Devuelve la primer Ball lanzada.
+#-------------------------------
+[COTTONDOWN]
+Name = Pelusa
+Description = Lanza pelusas que reducen la Velocidad.
+#-------------------------------
+[PROPELLERTAIL]
+Name = Hélice caudal
+Description = Sus ataques no pueden ser redirigidos.
+#-------------------------------
+[MIRRORARMOR]
+Name = Coraza reflejo
+Description = Regresa efectos que reducen las estadísticas.
+#-------------------------------
+[GULPMISSILE]
+Name = Tragamisil
+Description = Atrapa a una presa y la suelta cuando lo golpean.
+#-------------------------------
+[STALWART]
+Name = Acérrimo
+Description = Sus movimientos no pueden ser redirigidos.
+#-------------------------------
+[STEAMENGINE]
+Name = Combustible
+Flags = FasterEggHatching
+Description = Sube mucho la Vel. si le pega un mov. Fuego o Agua.
+#-------------------------------
+[PUNKROCK]
+Name = Punk Rock
+Description = Potencia movimientos de sonido.
+#-------------------------------
+[SANDSPIT]
+Name = Expulsarena
+Description = Crea una tormenta de arena si lo golpean.
+#-------------------------------
+[ICESCALES]
+Name = Escamas de hielo
+Description = Los ataques espec. hacen la mitad de daño.
+#-------------------------------
+[RIPEN]
+Name = Maduración
+Description = Duplica el efecto de las bayas.
+#-------------------------------
+[ICEFACE]
+Name = Cara de hielo
+Description = Bloquea ataques una sola vez.
+#-------------------------------
+[POWERSPOT]
+Name = Fuente energ.
+Description = Potencia movimientos de los aliados.
+#-------------------------------
+[MIMICRY]
+Name = Mimetismo
+Description = Cambia el tipo según el terreno.
+#-------------------------------
+[SCREENCLEANER]
+Name = Antibarrera
+Description = Limpia efectos de barreras si entra al combate.
+#-------------------------------
+[STEELYSPIRIT]
+Name = Alma acerada
+Description = Potencia mov. Acero de los aliados.
+#-------------------------------
+[PERISHBODY]
+Name = Cuerpo mortal
+Description = Ambos Pkm se deb. en 3 turnos tras el contacto.
+#-------------------------------
+[WANDERINGSPIRIT]
+Name = Alma errante
+Description = Cambia las habilidades con su objetivo.
+#-------------------------------
+[GORILLATACTICS]
+Name = Monotema
+Description = Sube el ataque, pero solo puede usar un mov.
+#-------------------------------
+[NEUTRALIZINGGAS]
+Name = Gas reactivo
+Description = Anula los efectos de las habilidades.
+#-------------------------------
+[PASTELVEIL]
+Name = Velo pastel
+Description = Previene al equipo del envenenamiento.
+#-------------------------------
+[HUNGERSWITCH]
+Name = Mutapetito
+Description = Cambia de forma cada turno.
+#-------------------------------
+[QUICKDRAW]
+Name = Mano rápida
+Description = A veces se mueve antes.
+#-------------------------------
+[UNSEENFIST]
+Name = Puño invisible
+Description = El Pokémon ignora las protecciones.
+#-------------------------------
+[CURIOUSMEDICINE]
+Name = Medicina extraña
+Description = Reestablece las estad. de los aliados al entrar en combate.
+#-------------------------------
+[TRANSISTOR]
+Name = Transistor
+Description = Potencia movimientos tipo Eléc.
+#-------------------------------
+[DRAGONSMAW]
+Name = Mand. dragón
+Description = Potencia movimientos tipo Dragón.
+#-------------------------------
+[CHILLINGNEIGH]
+Name = Rel. blanco
+Description = Aumenta el Ataque tras derrotar un Pokémon.
+#-------------------------------
+[GRIMNEIGH]
+Name = Relincho negro
+Description = Aumenta el At. Esp. tras derrotar un Pokémon.
+#-------------------------------
+[ASONECHILLINGNEIGH]
+Name = Un. ecuestre
+Description = Combina Nerviosismo y Relincho blanco.
+#-------------------------------
+[ASONEGRIMNEIGH]
+Name = Un. ecuestre
+Description = Combina Nerviosismo y Relincho negro.
