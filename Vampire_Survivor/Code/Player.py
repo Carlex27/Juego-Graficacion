@@ -7,7 +7,7 @@ class Player(pygame.sprite.Sprite):
         self.state, self.frame_index = 'down', 0
         self.image = pygame.image.load(join("Assets","images","player","down","0.png"))
         self.rect = self.image.get_frect(center = pos)
-        self.hitbox_rect = self.rect.inflate(-60, -90)
+        self.hitbox_rect = self.rect.inflate(0, -30)
 
         #Movement
         self.direction = pygame.Vector2()
