@@ -3,6 +3,8 @@ from settings import *
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos ,groups, collision_sprites):
         super().__init__(groups)
+        self.score = 0
+        self.lifes = 3
         self.load_images()
         self.state, self.frame_index = 'down', 0
         self.image = pygame.image.load(join("Assets","images","player","down","0.png"))

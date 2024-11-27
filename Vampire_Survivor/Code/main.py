@@ -4,6 +4,7 @@ from sprites import *
 from pytmx.util_pygame import load_pygame
 from random import choice
 from groups import AllSprites
+from Interfaces import PlayerInterface
 
 class Game:
     def __init__(self):
@@ -28,9 +29,22 @@ class Game:
 
         #Enemy timer
         self.enemy_event = pygame.event.custom_type()
-        pygame.time.set_timer(self.enemy_event,300)
+        pygame.time.set_timer(self.enemy_event,500)
         self.spawn_positions = []
 
+        #Audio
+        self.shoot_sound = pygame.mixer.Sound(join('Assets','audio','shoot.wav'))
+        self.shoot_sound.set_volume(0.35)
+        self.impact_sound = pygame.mixer.Sound(join('Assets','audio','impact.ogg'))
+        self.music = pygame.mixer.Sound(join('Assets','audio','music.wav'))
+        self.music.play(loops=-1)
+        self.music.set_volume(0.3)
+        self.hurt_sound = pygame.mixer.Sound(join('Assets','audio','classic_hurt.mp3'))
+        self.hurt_sound.set_volume(0.4)
+
+        #Interface
+        
+        
         self.load_images()
         self.setup()
 
@@ -45,7 +59,9 @@ class Game:
                 for file_name in sorted(file_names, key = lambda name: int(name.split('.')[0])):
                     full_path = join(folder_path, file_name)
                     surf = pygame.image.load(full_path).convert_alpha()
-                    self.enemy_frames[folder].append(surf)
+
+                    scaled_surf = pygame.transform.scale(surf, (surf.get_width() // 1.5, surf.get_height() // 1.5))
+                    self.enemy_frames[folder].append(scaled_surf)
         
 
     def setup(self):
@@ -66,10 +82,11 @@ class Game:
                 self.gun = Gun(self.player, self.all_sprites)
             else:
                 self.spawn_positions.append((obj.x,obj.y))
-                print((obj.x,obj.y))
+            self.player_interface = PlayerInterface(self.player, self.display_surface)
 
     def input(self):
         if pygame.mouse.get_pressed()[0] and self.can_shoot:
+            self.shoot_sound.play()
             pos = self.gun.rect.center + self.gun.player_direction * 50
             Bullet(self.bullet_surf, pos, self.gun.player_direction, (self.all_sprites, self.bullet_sprites))
             self.can_shoot = False
@@ -81,11 +98,32 @@ class Game:
             if current_time - self.shoot_time >= self.gun_cooldown:
                 self.can_shoot = True
 
+    def bulllet_collision(self):
+        if self.bullet_sprites:
+            for bullet in self.bullet_sprites:
+                collision_sprites = pygame.sprite.spritecollide(bullet, self.enemy_sprites, False, pygame.sprite.collide_mask)
+                if collision_sprites:
+                    self.impact_sound.play()
+                    bullet.kill()
+                    for sprite in collision_sprites:
+                        sprite.destroy()
+                        self.player.score += 1
+
+    def player_collision(self):
+        collision_sprite = pygame.sprite.spritecollide(self.player, self.enemy_sprites, False, pygame.sprite.collide_mask)
+        if collision_sprite:
+            self.player.lifes -= 1
+            for enemy in collision_sprite:
+                enemy.kill()
+            if self.player.lifes <= 0:
+                self.running = False
+            self.hurt_sound.play()
+
     def run(self):
         while self.running:
-            #dt
-            dt = self.clock.tick() / 1000
-            #event loop
+            #dtd
+            dt = self.clock.tick(120) / 1000
+            #event loopa
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.running = False
@@ -95,10 +133,13 @@ class Game:
             self.gun_timer()
             self.input()
             self.all_sprites.update(dt)
-
+            self.bulllet_collision()
+            self.player_collision()
+            
             #render
             self.display_surface.fill('black')
             self.all_sprites.draw(self.player.rect.center)
+            self.player_interface.update()
             pygame.display.update()
             
         

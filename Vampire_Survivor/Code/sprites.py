@@ -18,7 +18,7 @@ class Gun(pygame.sprite.Sprite):
     def __init__(self, player ,groups):
         #Player connection
         self.player = player
-        self.distance = 80
+        self.distance = 60
         self.player_direction = pygame.Vector2(1,0)
 
         #Sprite setup
@@ -74,10 +74,14 @@ class Enemy(pygame.sprite.Sprite):
 
         #Rect
         self.rect = self.image.get_frect(center = pos)
-        self.hitbox = self.rect.inflate(-20,-40)
+        self.hitbox_rect = self.rect.inflate(-20,-40)
         self.collision_sprites = collision_sprites
         self.direction = pygame.Vector2()
-        self.speed = 350
+        self.speed = 300
+
+        #Timer
+        self.death_time = 0
+        self.death_duration = 200
 
     def animate(self,dt):
         self.frame_index += self.animation_speed * dt
@@ -89,8 +93,41 @@ class Enemy(pygame.sprite.Sprite):
         enemy_pos = pygame.Vector2(self.rect.center)
         self.direction = (player_pos - enemy_pos).normalize()
         #Update the rect position
-        self.rect.center += self.direction * self.speed * dt
+        self.hitbox_rect.x += self.direction.x * self.speed * dt
+        self.collision('horizontal')
+        self.hitbox_rect.y += self.direction.y * self.speed * dt
+        self.collision('vertical')
+        self.rect.center = self.hitbox_rect.center
+
+    def collision(self, direction):
+        for sprite in self.collision_sprites:
+            if sprite.rect.colliderect(self.hitbox_rect):
+                if direction == 'horizontal':
+                    #Verifica si el movimiento es hacia la derecha 
+                    if self.direction.x > 0: self.hitbox_rect.right = sprite.rect.left
+                    #Verifica si el movimiento es hacia la izquierda
+                    elif self.direction.x < 0: self.hitbox_rect.left = sprite.rect.right
+                elif direction == 'vertical':
+                    #Verifica si el movimiento es hacia abajo
+                    if self.direction.y > 0: self.hitbox_rect.bottom = sprite.rect.top
+                    #Verifica si el movimiento es hacia arriba
+                    elif self.direction.y < 0: self.hitbox_rect.top = sprite.rect.bottom
+
+    def destroy(self):
+        #Start a timer
+        self.death_time = pygame.time.get_ticks()
+        #Change the image
+        surf = pygame.mask.from_surface(self.frames[0]).to_surface()
+        surf.set_colorkey('black')
+        self.image = surf
+    
+    def death_timer(self):
+        if pygame.time.get_ticks() - self.death_time > self.death_duration:
+            self.kill()
 
     def update(self, dt):
-        self.move(dt)
-        self.animate(dt)
+        if self.death_time == 0:
+            self.move(dt)
+            self.animate(dt)
+        else:
+            self.death_timer()
