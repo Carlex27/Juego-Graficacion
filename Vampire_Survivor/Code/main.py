@@ -27,9 +27,9 @@ class Game:
         self.shoot_time = 0
         self.gun_cooldown = 150
 
-        #Enemy timer
+        #Enemy timer a
         self.enemy_event = pygame.event.custom_type()
-        pygame.time.set_timer(self.enemy_event,500)
+        pygame.time.set_timer(self.enemy_event,350)
         self.spawn_positions = []
 
         #Audio
