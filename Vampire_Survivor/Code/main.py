@@ -83,6 +83,7 @@ class Game:
             else:
                 self.spawn_positions.append((obj.x,obj.y))
             self.player_interface = PlayerInterface(self.player, self.display_surface)
+    
 
     def input(self):
         if pygame.mouse.get_pressed()[0] and self.can_shoot:
@@ -114,6 +115,8 @@ class Game:
         if collision_sprite:
             self.player.lifes -= 1
             for enemy in collision_sprite:
+                if isinstance(enemy, Enemy) and enemy.is_invulnerable():
+                    continue
                 enemy.kill()
             if self.player.lifes <= 0:
                 self.running = False

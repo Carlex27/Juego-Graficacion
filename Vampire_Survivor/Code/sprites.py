@@ -83,6 +83,9 @@ class Enemy(pygame.sprite.Sprite):
         self.death_time = 0
         self.death_duration = 200
 
+        self.spawn_time = pygame.time.get_ticks()
+        self.invulnerable_duration = 2000
+
     def animate(self,dt):
         self.frame_index += self.animation_speed * dt
         self.image = self.frames[int(self.frame_index) % len(self.frames)]
@@ -99,7 +102,14 @@ class Enemy(pygame.sprite.Sprite):
         self.collision('vertical')
         self.rect.center = self.hitbox_rect.center
 
+    def is_invulnerable(self):
+        return pygame.time.get_ticks() - self.spawn_time < self.invulnerable_duration
+
     def collision(self, direction):
+
+        if self.is_invulnerable():
+            return
+        
         for sprite in self.collision_sprites:
             if sprite.rect.colliderect(self.hitbox_rect):
                 if direction == 'horizontal':
