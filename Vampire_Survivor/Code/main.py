@@ -1,8 +1,7 @@
 from settings import *
 from Player import Player
 from sprites import *
-from pytmx.util_pygame import load_pygame
-from random import choice
+
 from groups import AllSprites
 from Interfaces import PlayerInterface
 
@@ -40,7 +39,7 @@ class Game:
         self.music.play(loops=-1)
         self.music.set_volume(0.3)
         self.hurt_sound = pygame.mixer.Sound(join('Assets','audio','classic_hurt.mp3'))
-        self.hurt_sound.set_volume(0.4)
+        self.hurt_sound.set_volume(0.7)
 
         #Interface
         
@@ -107,21 +106,24 @@ class Game:
                     self.impact_sound.play()
                     bullet.kill()
                     for sprite in collision_sprites:
-                        sprite.destroy()
+                        #sprite.destroy()
+                        sprite.kill()
                         self.player.score += 1
 
     def player_collision(self):
         collision_sprite = pygame.sprite.spritecollide(self.player, self.enemy_sprites, False, pygame.sprite.collide_mask)
         if collision_sprite:
             self.player.lifes -= 1
+
             for enemy in collision_sprite:
-                if isinstance(enemy, Enemy) and enemy.is_invulnerable():
-                    continue
                 enemy.kill()
-            if self.player.lifes <= 0:
-                self.running = False
+
             self.hurt_sound.play()
 
+            if self.player.lifes <= 0:
+                self.running = False
+            
+    
     def run(self):
         while self.running:
             #dtd
