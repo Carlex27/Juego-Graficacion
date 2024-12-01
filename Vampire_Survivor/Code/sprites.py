@@ -73,7 +73,7 @@ class Bullet(pygame.sprite.Sprite):
         if pygame.time.get_ticks() - self.spawn_time > self.lifetime:
             self.kill()
 
-class Enemy(pygame.sprite.Sprite):
+class Entity(pygame.sprite.Sprite):
     def __init__(self,pos,frames,groups,player,collision_sprites):
         super().__init__(groups)
         self.player = player
@@ -88,10 +88,6 @@ class Enemy(pygame.sprite.Sprite):
         self.collision_sprites = collision_sprites
         self.direction = pygame.Vector2()
         self.speed = 300
-
-        #Timer
-        self.death_time = 0
-        self.death_duration = 200
 
         self.spawn_time = pygame.time.get_ticks()
 
@@ -126,21 +122,17 @@ class Enemy(pygame.sprite.Sprite):
                     #Verifica si el movimiento es hacia arriba
                     elif self.direction.y < 0: self.hitbox_rect.top = sprite.rect.bottom
 
-    def destroy(self):
-        #Start a timer
-        self.death_time = pygame.time.get_ticks()
-        #Change the image
-        surf = pygame.mask.from_surface(self.frames[0]).to_surface()
-        surf.set_colorkey('black')
-        self.image = surf
-    
-    def death_timer(self):
-        if pygame.time.get_ticks() - self.death_time > self.death_duration:
-            self.kill()
-
     def update(self, dt):
-        if self.death_time == 0:
-            self.move(dt)
-            self.animate(dt)
-        else:
-            self.death_timer()
+        self.move(dt)
+        self.animate(dt)
+
+class Enemy(Entity):
+    def __init__(self,pos,frames,groups,player,collision_sprites):
+        super().__init__(pos,frames,groups,player,collision_sprites)
+
+class Boss(Entity):
+    def __init__(self, pos, frames, groups, player, collision_sprites):
+        super().__init__(pos,frames,groups,player,collision_sprites)
+        #Health
+        self.health = 50
+
