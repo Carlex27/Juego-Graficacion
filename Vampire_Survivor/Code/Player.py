@@ -38,23 +38,28 @@ class Player(pygame.sprite.Sprite):
 
     #Controles del jugador
     def input(self):
+        #Se obtienen las teclas presionadas
         keys = pygame.key.get_pressed()
-        self.direction.x = int(keys[pygame.K_d] or keys[pygame.K_RIGHT]) - int(keys[pygame.K_a] or keys[pygame.K_LEFT])
+        #Se cambia la direccion del jugador
+        self.direction.x = int(keys[pygame.K_d] or keys[pygame.K_RIGHT]) - int(keys[pygame.K_a] or keys[pygame.K_LEFT]) 
         self.direction.y = int(keys[pygame.K_s] or keys[pygame.K_DOWN]) - int(keys[pygame.K_w] or keys[pygame.K_UP])
+        #Se normaliza la direccion en caso de que se mueva en diagonal
         self.direction = self.direction.normalize() if self.direction else self.direction
 
     #Movimiento del jugador
     def move(self,dt):
+        #Primero se actualiza la hitbox del jugador
         self.hitbox_rect.x += self.direction.x * self.speed * dt
         self.collision('horizontal')
         self.hitbox_rect.y += self.direction.y * self.speed * dt
         self.collision('vertical')
+        #Se actualiza la posicion del jugador con el rect original
         self.rect.center = self.hitbox_rect.center
 
     #Colisiones del jugador
     def collision(self, direction):
-        for sprite in self.collision_sprites:
-            if sprite.rect.colliderect(self.hitbox_rect):
+        for sprite in self.collision_sprites:   #Se iteran los sprites en los que puede colisionar
+            if sprite.rect.colliderect(self.hitbox_rect):   
                 if direction == 'horizontal':
                     #Verifica si el movimiento es hacia la derecha 
                     if self.direction.x > 0: self.hitbox_rect.right = sprite.rect.left
@@ -68,7 +73,7 @@ class Player(pygame.sprite.Sprite):
 
     #Animacion del jugador
     def animate(self,dt):
-        #Get state
+        #Se obtiene el estado del jugador para cambiar entre los sprites
         if self.direction.x != 0:
             self.state = 'right' if self.direction.x > 0 else 'left'
         elif self.direction.y != 0:
