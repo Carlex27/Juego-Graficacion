@@ -56,14 +56,13 @@ class Gun(pygame.sprite.Sprite):
         self.rect.center = self.player.rect.center + self.player_direction * self.distance
         
 
-#Clase para la bala del arma
 class Bullet(pygame.sprite.Sprite):
     def __init__(self, surf, pos, direction, groups):
         super().__init__(groups)
         self.image = surf
         self.rect = self.image.get_frect(center = pos)
-        self.spawn_time = pygame.time.get_ticks()   #Tiempo donde se genero la bala
-        self.lifetime = 1000    #Tiempo de vida de la bala 1000 ms o 1 segundo
+        self.spawn_time = pygame.time.get_ticks()
+        self.lifetime = 1000
 
         self.direction = direction
         self.speed = 1200
@@ -71,19 +70,17 @@ class Bullet(pygame.sprite.Sprite):
     def update(self, dt):
         self.rect.center += self.direction * self.speed * dt
         
-        #Se valida el tiempo de vida de la bala (optimizar memoria)
         if pygame.time.get_ticks() - self.spawn_time > self.lifetime:
             self.kill()
 
-#Clase base para las entidades enemigas del juego
 class Entity(pygame.sprite.Sprite):
     def __init__(self,pos,frames,groups,player,collision_sprites):
         super().__init__(groups)
-        self.player = player    #Se asigna el jugador
+        self.player = player
         #image
-        self.frames, self.frame_index = frames,0    #Se asignan los frames y el indice del frame actual
-        self.image = self.frames[self.frame_index]  #Se asigna el frame actual
-        self.animation_speed = 6                    #Velocidad de animacion
+        self.frames, self.frame_index = frames,0
+        self.image = self.frames[self.frame_index]
+        self.animation_speed = 6
 
         #Rect
         self.rect = self.image.get_frect(center = pos)
@@ -92,26 +89,25 @@ class Entity(pygame.sprite.Sprite):
         self.direction = pygame.Vector2()
         self.speed = 300
 
+        self.spawn_time = pygame.time.get_ticks()
 
     def animate(self,dt):
-        #Se actualiza el indice del frame
         self.frame_index += self.animation_speed * dt
-        #Se actualiza el frame
         self.image = self.frames[int(self.frame_index) % len(self.frames)]
 
     def move(self,dt):
-        #Obtener las direciones del jugador y del enemigo
+        #Get direction
         player_pos = pygame.Vector2(self.player.rect.center)
         enemy_pos = pygame.Vector2(self.rect.center)
-        self.direction = (player_pos - enemy_pos).normalize()   #Se calcula la direccion en la que se va a mover el enemigo
-        #Se actualiza el rect del enemigo
+        self.direction = (player_pos - enemy_pos).normalize()
+        #Update the rect position
         self.hitbox_rect.x += self.direction.x * self.speed * dt
-        self.collision('horizontal')        #Se verifica colisiones en el eje x
+        self.collision('horizontal')
         self.hitbox_rect.y += self.direction.y * self.speed * dt
-        self.collision('vertical')          #Se verifica colisiones en el eje y
+        self.collision('vertical')
         self.rect.center = self.hitbox_rect.center
 
-    #Metodo que verifica las colisiones con los sprites en los que puede colisionar
+    
     def collision(self, direction):
         for sprite in self.collision_sprites:
             if sprite.rect.colliderect(self.hitbox_rect):
@@ -130,12 +126,10 @@ class Entity(pygame.sprite.Sprite):
         self.move(dt)
         self.animate(dt)
 
-#Clase para los enemigos normales del juego
 class Enemy(Entity):
     def __init__(self,pos,frames,groups,player,collision_sprites):
         super().__init__(pos,frames,groups,player,collision_sprites)
 
-#Clase para los bosses del juego (Solo se actualiza la vida de los mismos)
 class Boss(Entity):
     def __init__(self, pos, frames, groups, player, collision_sprites):
         super().__init__(pos,frames,groups,player,collision_sprites)
